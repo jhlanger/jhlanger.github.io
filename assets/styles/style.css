@@ -97,13 +97,11 @@
 }
 
 .resume-bio {
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
-.resume-resume {
-    margin: auto 0 auto 15%;
 
-}
 
 .button1{
     border: none;
@@ -116,6 +114,7 @@
     margin: 4px 2px;
     cursor: pointer;
     background-color: var(--dark-gray);
+    width:100%;
 }
 .work {
     background-color:var(--dark-gray);
@@ -123,7 +122,7 @@
     display:flex;
     flex-wrap:wrap;
     color: var(--light);
-    height: 120px;
+    
     
 }
 .work h2{
@@ -137,35 +136,65 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
-    width: 50%;
+    width: 55%;
+    background-color:var(--dark-gray);
+    
 }
 
-.button {
-    
-    border: none;
+
+.buttontext {
     color: var(--dark);
-    padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     background-color: var(--light);
+    height: 100%;
+    width: 100%;
+    display:block;
+    z-index: 99;
+    opacity: .1%;
+    
+    
     
 }
 .runbuddy {
     background-image: url('../images/runbuddyimage.png');
+    background-size:cover;
+    opacity: 70%;
+    height:200px;
+    width: 80%;
+    margin-bottom: 20px;
 }
 
-.button:hover {
-    padding: 25px 45px;
-    font-weight:bold;
+.row2 {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.horiseon {
+    background-image: url('../images/horiseonimage.PNG');
+    background-size:cover;
+    height: 100px;
+    width: 50%;
+    opacity: 70%;
+    margin-right: 20px;
+}
+
+.github{
+    background-image: url('../images/githubimage.PNG');
+    background-size:cover;
+    height: 100px;
+    width: 50%;
+    opacity: 70%;
+}
+
+.hover:hover {
+    opacity: 100%;
+    border: 3px solid black;
 }
 
 
-.square {
-    height: 200px;
-    width: 200px;
-    background-color: var(--light);
-}
 .contact-info {
     background-color: var(--light);
     padding: 20px;
@@ -185,12 +214,14 @@
 .contact-info ul {
     width: 60%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-right: 10%;
 }
 
 .contact-info li {
     list-style-type: none;
     font-size:18px;
+    
 }
 footer {
     background:var(--dark-gray);
@@ -204,3 +235,33 @@ footer {
 footer p {
     margin-left: 15%;
 }
+
+@media screen and (max-width: 980px) {
+    
+    h2 {
+        text-align: center;
+    }
+    .resume-full {
+        display:block;
+    }
+    .resume-bio {
+        width: 90%;
+        margin-bottom: 20px;
+       
+    }
+    .reslink {
+        margin-left:35%;
+    }
+    .button1 {
+        width: 50%;
+    }
+
+    .horiseon{
+        width: 80%;
+    }
+
+    .github{
+        width:80%;
+    }
+}
+        
