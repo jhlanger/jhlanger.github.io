@@ -101,6 +101,7 @@
 .resume-bio {
     margin-left: 10%;
     margin-right: 5%;
+    
 }
 
 
@@ -143,6 +144,8 @@
     background-color:var(--dark-gray);
     
 }
+
+/*image titles and css code to format*/
 .title {
     width: fit-content
 }
