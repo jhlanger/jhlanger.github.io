@@ -9,7 +9,7 @@
     --light: rgb(247, 235, 221);
 }
 
-/* Header CSS*/
+/* Header and Nav CSS*/
 .header {
     background-color: var(--dark-gray);
     color: var(--light);
@@ -66,9 +66,11 @@
 }
 .header a:hover {
     background:var(--dark-gray);
-    border-radius:20px;
+    border-radius:10px;
     text-shadow:none;
 }
+
+/* Resume/bio Section CSS*/
 .full-header {
     background-color: var(--dark);
     margin-left: 20%;
@@ -91,7 +93,7 @@
 }
 
 .resume-full {
-    width: 50%;
+    width: 54%;
     display:flex;
     justify-content: space-around;
 }
@@ -102,7 +104,7 @@
 }
 
 
-
+/* Links for Resume pdf and Linked in profile*/
 .button1{
     border: none;
     color: var(--light);
@@ -116,6 +118,7 @@
     background-color: var(--dark-gray);
     width:100%;
 }
+/* Work Examples CSS*/
 .work {
     background-color:var(--dark-gray);
     padding:20px;
@@ -136,12 +139,33 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
-    width: 55%;
+    width: 60%;
     background-color:var(--dark-gray);
     
 }
+.title {
+    width: fit-content
+}
+.title h3 {
+    color: var(--dark);
+    background-color: var(--light);
+    font-size: 25px;
+    width: fit-content;
+    position:relative;
+    bottom: 50px;
+    left: 20px;
+    
+}
 
-
+.title p {
+    color: var(--dark);
+    background-color: var(--light);
+    font-size: 12px;
+    width: 100%;
+    position:relative;
+    bottom: 50px;
+    left: 20px; 
+}
 .buttontext {
     color: var(--dark);
     text-decoration: none;
@@ -156,17 +180,18 @@
     
     
 }
+/* Work example links use titled images of the application and have interactivity with opacity and background */
+/* Primary application is larger (runbuddy)*/
 .runbuddy {
     background-image: url('../images/runbuddyimage.PNG');
     background-size:cover;
     opacity: 70%;
-    height:200px;
+    height:400px;
     width: 80%;
     margin-bottom: 20px;
 }
 
 .row2 {
-    height: 100px;
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -175,7 +200,7 @@
 .horiseon {
     background-image: url('../images/horiseonimage.PNG');
     background-size:cover;
-    height: 100px;
+    height: 200px;
     width: 50%;
     opacity: 70%;
     margin-right: 20px;
@@ -184,7 +209,7 @@
 .github{
     background-image: url('../images/githubimage.PNG');
     background-size:cover;
-    height: 100px;
+    height: 200px;
     width: 50%;
     opacity: 70%;
 }
@@ -193,7 +218,7 @@
     opacity: 100%;
     border: 3px solid black;
 }
-
+/* contact info CSS*/
 
 .contact-info {
     background-color: var(--light);
@@ -223,6 +248,7 @@
     font-size:18px;
     
 }
+/* Footer CSS*/
 footer {
     background:var(--dark-gray);
     width: 100%;
@@ -235,7 +261,7 @@ footer {
 footer p {
     margin-left: 15%;
 }
-
+/* Applied media queiries for responsive layout when below width of 980px CSS*/
 @media screen and (max-width: 980px) {
     
     h2 {
@@ -255,13 +281,17 @@ footer p {
     .button1 {
         width: 50%;
     }
+    .row2 {
+        display:block;
+    }
 
     .horiseon{
-        width: 80%;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .github{
-        width:80%;
+        width:100%;
     }
 }
         
