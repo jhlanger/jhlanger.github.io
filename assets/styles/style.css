@@ -185,8 +185,8 @@
 }
 /* Work example links use titled images of the application and have interactivity with opacity and background */
 /* Primary application is larger (runbuddy)*/
-.runbuddy {
-    background-image: url('../images/runbuddyimage.PNG');
+.NBA {
+    background-image: url('../images/nbaaveragestatsimage.PNG');
     background-size:cover;
     opacity: 70%;
     height:400px;
@@ -209,8 +209,8 @@
     margin-right: 20px;
 }
 
-.github{
-    background-image: url('../images/githubimage.PNG');
+.runbuddy{
+    background-image: url('../images/runbuddyimage.PNG');
     background-size:cover;
     height: 200px;
     width: 50%;
