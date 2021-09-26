@@ -185,8 +185,8 @@
 }
 /* Work example links use titled images of the application and have interactivity with opacity and background */
 /* Primary application is larger (runbuddy)*/
-.NBA {
-    background-image: url('../images/nbaaveragestatsimage.PNG');
+.carmart {
+    background-image: url('../images/carmartimage.PNG');
     background-size:cover;
     opacity: 70%;
     height:400px;
@@ -200,8 +200,8 @@
     justify-content: space-evenly;
 }
 
-.horiseon {
-    background-image: url('../images/horiseonimage.PNG');
+.NBA {
+    background-image: url('../images/nbaaveragestatsimage.PNG');
     background-size:cover;
     height: 200px;
     width: 50%;
